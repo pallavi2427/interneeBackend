@@ -1,1 +1,1 @@
-{"version":3,"file":"nodemailerConfig.js","sourceRoot":"","sources":["../../src/utils/nodemailerConfig.ts"],"names":[],"mappings":"AAAA,MAAM,CAAC,OAAO,GAAG;IACf,IAAI,EAAE,gBAAgB;IACtB,gBAAgB;IAChB,aAAa;IACb,IAAI,EAAE;QACJ,IAAI,EAAE,gCAAgC;QACtC,IAAI,EAAE,kBAAkB;KACzB;CACF,CAAC"}
+{"version":3,"file":"nodemailerConfig.js","sourceRoot":"","sources":["../../src/utils/nodemailerConfig.ts"],"names":[],"mappings":"AAAA,MAAM,CAAC,OAAO,GAAG;IACf,IAAI,EAAE,gBAAgB;IAGtB,IAAI,EAAE;QACJ,IAAI,EAAE,gCAAgC;QACtC,IAAI,EAAE,kBAAkB;KACzB;CACF,CAAC"}

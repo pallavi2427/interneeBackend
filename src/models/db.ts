@@ -1,4 +1,4 @@
-import mysql from "mysql2";
+import * as mysql from "mysql2";
 import dbConfig from "../config/db.config";
 // Hook up the HTTP logger.
 require("dotenv").config();

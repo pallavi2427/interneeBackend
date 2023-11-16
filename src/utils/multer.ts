@@ -1,6 +1,6 @@
-import multer from "multer";
-import path from "path";
-import util from "util";
+import * as multer from "multer";
+import * as path from "path";
+import * as util from "util";
 const baseUrl = "../../src/upload";
 
 

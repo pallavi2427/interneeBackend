@@ -1,15 +1,11 @@
 "use strict";
-var __importDefault = (this && this.__importDefault) || function (mod) {
-    return (mod && mod.__esModule) ? mod : { "default": mod };
-};
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.CoursesModel = void 0;
 const sequelize_1 = require("sequelize");
-const db_sequlize_1 = __importDefault(require("./db.sequlize"));
+const db_sequlize_1 = require("./db.sequlize");
 class CoursesModel extends sequelize_1.Model {
 }
 exports.CoursesModel = CoursesModel;
-// 1: The model schema.
 CoursesModel.init({
     course_id: {
         type: sequelize_1.DataTypes.BIGINT,

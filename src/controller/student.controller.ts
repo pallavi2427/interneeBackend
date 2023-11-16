@@ -1,10 +1,10 @@
 import { StudentModel } from "../models/student.model";
-import fs from "fs";
-import path from "path";
+import * as fs from "fs";
+import * as path from "path";
 
-import crypto from "crypto";
-import bcrypt from "bcrypt";
-import jwt from "jsonwebtoken";
+import * as crypto from "crypto";
+import * as bcrypt from "bcrypt";
+import * as jwt from "jsonwebtoken";
 import { uploadFile } from "../utils/multer";
 import { validationResult } from "express-validator";
 const createOTP = require("../utils/otp");

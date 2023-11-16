@@ -1,15 +1,11 @@
 "use strict";
-var __importDefault = (this && this.__importDefault) || function (mod) {
-    return (mod && mod.__esModule) ? mod : { "default": mod };
-};
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.CoursestdModel = void 0;
 const sequelize_1 = require("sequelize");
-const db_sequlize_1 = __importDefault(require("./db.sequlize"));
+const db_sequlize_1 = require("./db.sequlize");
 class CoursestdModel extends sequelize_1.Model {
 }
 exports.CoursestdModel = CoursestdModel;
-// 1: The model schema.
 CoursestdModel.init({
     id: {
         type: sequelize_1.DataTypes.BIGINT,
@@ -46,5 +42,4 @@ CoursestdModel.init({
     freezeTableName: true,
     modelName: "coursestd",
 });
-// CoursestdModel.hasMany(StudentModel, { foreignKey: "id", as: "courseDetail" });
 //# sourceMappingURL=coursestd.model.js.map

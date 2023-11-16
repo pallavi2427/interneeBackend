@@ -1,1 +1,1 @@
-{"version":3,"file":"jobinternship.routes.js","sourceRoot":"","sources":["../../src/router/jobinternship.routes.ts"],"names":[],"mappings":";;;AAEA,qFAAkF;AAElF,SAAgB,mBAAmB,CAAC,GAAY;IAC9C,GAAG,CAAC,IAAI,CAAC,mBAAmB,EAAE,mDAAwB,CAAC,UAAU,CAAC,CAAC;IACnE,qEAAqE;AACvE,CAAC;AAHD,kDAGC"}
+{"version":3,"file":"jobinternship.routes.js","sourceRoot":"","sources":["../../src/router/jobinternship.routes.ts"],"names":[],"mappings":";;;AAEA,qFAAkF;AAElF,SAAgB,mBAAmB,CAAC,GAAY;IAC9C,GAAG,CAAC,IAAI,CAAC,mBAAmB,EAAE,mDAAwB,CAAC,UAAU,CAAC,CAAC;AAErE,CAAC;AAHD,kDAGC"}

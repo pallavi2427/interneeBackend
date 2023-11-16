@@ -2,7 +2,7 @@ import { studentController } from "../controller/student.controller";
 import { Express } from "express";
 import val from "../utils/validations";
 const nodemailer = require("nodemailer");
-import path from "path";
+import * as path from "path";
 import auth from "../middlware/auth";
 
 export function StudentRoutes(app: Express) {

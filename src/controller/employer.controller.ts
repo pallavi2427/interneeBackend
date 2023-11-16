@@ -1,9 +1,9 @@
 import { EmployerModel } from "../models/employer.model";
-import bcrypt from "bcrypt";
-import crypto from "crypto";
+import * as bcrypt from "bcrypt";
+import * as crypto from "crypto";
 import { validationResult } from "express-validator";
-import jwt from "jsonwebtoken";
-import nodemailer from "nodemailer";
+import * as jwt from "jsonwebtoken";
+import * as nodemailer from "nodemailer";
 const sendverificationEmail = require("../utils/sendverifactionEmail");
 const sendResetPasswordEmail = require("../utils/sendResetPasswordEmail");
 export class employerController {

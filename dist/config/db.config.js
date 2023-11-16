@@ -7,7 +7,7 @@ const dbConfig = {
     dialect: process.env.DIALECT,
     database: process.env.DB,
     username: process.env.USER,
-    port: process.env.PORT,
+    port: process.env.DB_PORT,
     logging: console.log,
     pool: {
         max: 5,

@@ -1,15 +1,11 @@
 "use strict";
-var __importDefault = (this && this.__importDefault) || function (mod) {
-    return (mod && mod.__esModule) ? mod : { "default": mod };
-};
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.InternApplyModel = void 0;
 const sequelize_1 = require("sequelize");
-const db_sequlize_1 = __importDefault(require("./db.sequlize"));
+const db_sequlize_1 = require("./db.sequlize");
 class InternApplyModel extends sequelize_1.Model {
 }
 exports.InternApplyModel = InternApplyModel;
-// 1: The model schema.
 InternApplyModel.init({
     id: {
         type: sequelize_1.DataTypes.BIGINT,

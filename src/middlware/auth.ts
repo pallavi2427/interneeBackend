@@ -1,4 +1,4 @@
-import jwt from "jsonwebtoken";
+import * as jwt from "jsonwebtoken";
 import { StudentModel } from "../models/student.model";
 import { EmployerModel } from "../models/employer.model";
 

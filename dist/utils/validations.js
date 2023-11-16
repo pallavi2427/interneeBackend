@@ -61,7 +61,6 @@ const validate = (method) => {
                     .not()
                     .isEmpty()
                     .withMessage("The company_address field is required"),
-                // check('user_type').not().isEmpty().withMessage('The user_type field is required.')
             ];
         }
         case "studentregister": {
@@ -94,8 +93,6 @@ const validate = (method) => {
                     .not()
                     .isEmpty()
                     .withMessage("The contact_number field is required"),
-                // check('attach_resume').not().isEmpty().withMessage('The attach_resume field is required'),
-                // check('user_type').not().isEmpty().withMessage('The user_type field is required.')
             ];
         }
         case "forgot": {

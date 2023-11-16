@@ -1,11 +1,8 @@
 "use strict";
-var __importDefault = (this && this.__importDefault) || function (mod) {
-    return (mod && mod.__esModule) ? mod : { "default": mod };
-};
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.StudentRoutes = void 0;
 const student_controller_1 = require("../controller/student.controller");
-const validations_1 = __importDefault(require("../utils/validations"));
+const validations_1 = require("../utils/validations");
 const nodemailer = require("nodemailer");
 function StudentRoutes(app) {
     app.post("/register", (0, validations_1.default)("studentregister"), student_controller_1.studentController.register);
@@ -25,7 +22,6 @@ function StudentRoutes(app) {
     });
     app.post("/send-email", (req, res) => {
         const { subject, email, message } = req.body;
-        // Email data
         const mailOptions = {
             from: "swapnil.devyanitechnologies@gmail.com",
             to: email,
@@ -42,7 +38,6 @@ function StudentRoutes(app) {
                 res.status(200).json({ message: "Email sent successfully" });
             }
         });
-        // Send the email
         return new Promise((resolve, reject) => {
             transporter.sendMail(mailOptions, (error, info) => {
                 if (error) {
