@@ -66,13 +66,12 @@ export class internapplyController {
     try {
       const data3 = await InternApplyModel.sequelize.query(
         `SELECT 
-            students.id, 
+            internapply.id As internshipId, 
             Internship.id,
-            Internship.title,
             internapply.student_id
             FROM students 
-            INNER JOIN internapply ON students.id = internapply.student_id 
-            INNER JOIN Internship ON Internship.id = internapply.id WHERE internapply.student_id=:student_id`,
+            INNER JOIN internapply ON internapply.student_id = students.id 
+            INNER JOIN Internship ON Internship.id = internapply.internship_id WHERE internapply.student_id=:student_id`,
         {
           replacements: { student_id: student_id },
           type: QueryTypes.SELECT,

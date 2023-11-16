@@ -1,0 +1,1 @@
+{"version":3,"file":"internapply.routes.js","sourceRoot":"","sources":["../../src/router/internapply.routes.ts"],"names":[],"mappings":";;;AAAA,iFAA6E;AAG7E,SAAgB,kBAAkB,CAAC,GAAY;IAC7C,GAAG,CAAC,IAAI,CAAC,sBAAsB,EAAE,8CAAqB,CAAC,cAAc,CAAC,CAAC;IAEvE,GAAG,CAAC,GAAG,CAAC,oBAAoB,EAAE,8CAAqB,CAAC,iBAAiB,CAAC,CAAC;AACzE,CAAC;AAJD,gDAIC"}

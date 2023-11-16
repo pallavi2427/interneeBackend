@@ -65,11 +65,11 @@ export class JobApplyController {
     try {
       const data3 = await JobApplyModel.sequelize.query(
         `SELECT 
-        students.id, 
+        jobapply.id As jobId, 
         job.id,
         jobapply.student_id
         FROM students 
-        INNER JOIN jobapply ON students.id = jobapply.student_id 
+        INNER JOIN jobapply ON jobapply.student_id = students.id 
         INNER JOIN job ON job.id = jobapply.job_id WHERE jobapply.student_id=:student_id`,
         {
           replacements: { student_id: student_id },

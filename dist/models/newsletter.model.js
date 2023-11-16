@@ -1,0 +1,1 @@
+//# sourceMappingURL=newsletter.model.js.map
