@@ -9,4 +9,5 @@ export function EmployerRoutes(app: Express) {
   app.get("/verifyEmail", employerController.verifyEmail);
   app.get("/rejectEmail", employerController.rejectEmail);
   app.put("/employer/profile/:id", employerController.profile);
+  app.get("/employer/applystudent", employerController.appliedstd);
 }

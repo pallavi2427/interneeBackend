@@ -14,6 +14,16 @@ InternshipModel.init({
         primaryKey: true,
         field: "id",
     },
+    emp_id: {
+        type: sequelize_1.DataTypes.BIGINT,
+        allowNull: true,
+        field: "emp_id",
+    },
+    admin_id: {
+        type: sequelize_1.DataTypes.BIGINT,
+        allowNull: true,
+        field: "admin_id",
+    },
     company_name: {
         type: sequelize_1.DataTypes.STRING(45),
         allowNull: true,

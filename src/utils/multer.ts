@@ -3,9 +3,8 @@ import * as path from "path";
 import * as util from "util";
 const baseUrl = "../../src/upload";
 
-
 const filePath = path.join(__dirname, baseUrl);
-const fullfilePath = path.join(filePath ,'/');
+const fullfilePath = path.join(filePath, "/");
 let storage = multer.diskStorage({
   destination: (req, file, cb) => {
     // Set the destination folder where the PDF files will be stored

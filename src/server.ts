@@ -2,7 +2,6 @@ import * as express from "express";
 import * as cors from "cors";
 import * as bodyParser from "body-parser";
 import sequelize from "./models/db.sequlize";
-import * as routes from "./router/index";
 import { uploadFile } from "./utils/multer";
 require("dotenv").config();
 
@@ -14,7 +13,6 @@ class App {
   constructor() {
     this.app = express();
     this.config();
-    routes.initRoutes(this.app);
 
     // Sync the Sequelize models with the database
     sequelize
@@ -37,7 +35,7 @@ class App {
     this.app.use(express.json());
     this.app.use(bodyParser.json());
     this.app.use(bodyParser.urlencoded({ extended: false }));
-    this.app.use(uploadFile)
+    this.app.use(uploadFile);
   }
 
   private startServer(): void {

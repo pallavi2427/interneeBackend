@@ -20,13 +20,13 @@ export function StudentRoutes(app: Express) {
     val("changePassword"),
     studentController.change_password
   );
-  app.get("/allStudentData",studentController.AllStudentData);
+  app.get("/allStudentData", studentController.AllStudentData);
   app.get("/studentData/:id", studentController.studentData);
 
   const transporter = nodemailer.createTransport({
     host: "smtp.gmail.com",
     auth: {
-      user: "swapnil.devyanitechnologies@gmail.com",
+      user: "pallavi.sisodiya9009@gmail.com",
       pass: process.env.GMAIL_PASSWORD,
     },
   });
@@ -35,7 +35,7 @@ export function StudentRoutes(app: Express) {
 
     // Email data
     const mailOptions = {
-      from: "swapnil.devyanitechnologies@gmail.com", // Use a verified Gmail address here
+      from: "pallavi.sisodiya9009@gmail.com", // Use a verified Gmail address here
       to: email,
       subject: subject,
       text: message,

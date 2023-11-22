@@ -16,14 +16,14 @@ function StudentRoutes(app) {
     const transporter = nodemailer.createTransport({
         host: "smtp.gmail.com",
         auth: {
-            user: "swapnil.devyanitechnologies@gmail.com",
+            user: "pallavi.sisodiya9009@gmail.com",
             pass: process.env.GMAIL_PASSWORD,
         },
     });
     app.post("/send-email", (req, res) => {
         const { subject, email, message } = req.body;
         const mailOptions = {
-            from: "swapnil.devyanitechnologies@gmail.com",
+            from: "pallavi.sisodiya9009@gmail.com",
             to: email,
             subject: subject,
             text: message,

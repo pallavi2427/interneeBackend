@@ -283,7 +283,6 @@ class studentController {
         }
     }
     static async download(req, res) {
-        console.log(req);
         try {
             const filename = req.params.filename;
             const filePath = path.join(__dirname, baseUrl + "/");

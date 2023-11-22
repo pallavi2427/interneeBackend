@@ -20,6 +20,16 @@ InternshipModel.init(
       primaryKey: true,
       field: "id",
     },
+    emp_id: {
+      type: DataTypes.BIGINT,
+      allowNull: true,
+      field: "emp_id",
+    },
+    admin_id: {
+      type: DataTypes.BIGINT,
+      allowNull: true,
+      field: "admin_id",
+    },
 
     company_name: {
       type: DataTypes.STRING(45),

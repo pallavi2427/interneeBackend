@@ -12,7 +12,6 @@ async function default_1(req, res, next) {
         const userId = data;
         console.log(userId);
         req.user = userId;
-        console.log(req.user);
         next();
     }
     catch (err) {

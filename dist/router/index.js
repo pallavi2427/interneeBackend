@@ -12,6 +12,7 @@ const jobapply_routes_1 = require("./jobapply.routes");
 const internapply_routes_1 = require("./internapply.routes");
 const jobinternship_routes_1 = require("./jobinternship.routes");
 const contactus_routes_1 = require("./contactus.routes");
+const campus_routes_1 = require("./campus.routes");
 function initRoutes(app) {
     app.get("/api", (req, res) => res.status(200).send({
         message: "server is listening!",
@@ -27,6 +28,7 @@ function initRoutes(app) {
     (0, internapply_routes_1.internsApplyRoutes)(app);
     (0, jobinternship_routes_1.JobInternshipRoutes)(app);
     (0, contactus_routes_1.ContactusRoutes)(app);
+    (0, campus_routes_1.CampusRoutes)(app);
     app.all("*", (req, res) => res.status(404).send());
 }
 exports.initRoutes = initRoutes;

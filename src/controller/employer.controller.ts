@@ -1,15 +1,17 @@
-import { EmployerModel } from "../models/employer.model";
 import * as bcrypt from "bcrypt";
 import * as crypto from "crypto";
-import { validationResult } from "express-validator";
 import * as jwt from "jsonwebtoken";
 import * as nodemailer from "nodemailer";
+import { validationResult } from "express-validator";
+import { EmployerModel } from "../models/employer.model";
 const sendverificationEmail = require("../utils/sendverifactionEmail");
 const sendResetPasswordEmail = require("../utils/sendResetPasswordEmail");
 export class employerController {
   //Employer register//
   static async register(req: any, res: any) {
     try {
+      console.log(req,"reeeeeeeeeeeeeeee");
+      
       const errors = validationResult(req);
       if (!errors.isEmpty()) {
         return res.status(422).json({ errors: errors.array() });
@@ -47,7 +49,6 @@ export class employerController {
       res.status(500).send({ message: error.message });
     }
   }
-
   //Employer login//
   static async login(req: any, res: any) {
     const { email, password } = req.body;
@@ -122,12 +123,10 @@ export class employerController {
       res.status(500).json({ message: "Internal server error" });
     }
   }
-
   //Get All Employer data//
   static async employerData(req: any, res: any) {
     try {
       const data = await EmployerModel.findAll();
-
       return res.json({ employer: data });
     } catch (err) {
       console.log("Error", err);
@@ -195,9 +194,7 @@ export class employerController {
       });
     }
   }
-
   static async profile(req: any, res: any) {
-    console.log(req);
 
     try {
       const userId = req.params.id;
@@ -231,5 +228,7 @@ export class employerController {
       console.error(error);
       res.status(500).send({ message: error.message });
     }
+  }
+  static async appliedstd(req:any,res:any){
   }
 }

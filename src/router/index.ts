@@ -10,6 +10,8 @@ import { JobApplyRoutes } from "./jobapply.routes";
 import { internsApplyRoutes } from "./internapply.routes";
 import { JobInternshipRoutes } from "./jobinternship.routes";
 import { ContactusRoutes } from "./contactus.routes";
+import { CampusRoutes } from "./campus.routes";
+
 export function initRoutes(app: Express) {
   app.get("/api", (req: Request, res: Response) =>
     res.status(200).send({
@@ -28,6 +30,6 @@ export function initRoutes(app: Express) {
   internsApplyRoutes(app);
   JobInternshipRoutes(app);
   ContactusRoutes(app);
-
+  CampusRoutes(app);
   app.all("*", (req: Request, res: Response) => res.status(404).send());
 }

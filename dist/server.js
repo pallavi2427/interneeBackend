@@ -4,7 +4,6 @@ const express = require("express");
 const cors = require("cors");
 const bodyParser = require("body-parser");
 const db_sequlize_1 = require("./models/db.sequlize");
-const routes = require("./router/index");
 const multer_1 = require("./utils/multer");
 require("dotenv").config();
 const PORT = 8080;
@@ -12,7 +11,6 @@ class App {
     constructor() {
         this.app = express();
         this.config();
-        routes.initRoutes(this.app);
         db_sequlize_1.default
             .sync()
             .then(() => {

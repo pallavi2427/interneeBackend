@@ -1,7 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const sendEmail_1 = require("./sendEmail");
-const sendverificationEmail = async ({ company_name, email, token, origin = "http://192.168.29.11:8080", }) => {
+const sendverificationEmail = async ({ company_name, email, token, origin = "http://192.168.29.4:8080", }) => {
     const verify = `${origin}/verifyEmail?verification_token=${token}&email=${email}`;
     const message1 = `
   <p>${company_name}</p>

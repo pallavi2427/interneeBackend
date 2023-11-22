@@ -5,7 +5,7 @@ const sendverificationEmail = async ({
   company_name,
   email,
   token,
-  origin = "http://192.168.29.11:8080",
+  origin = "http://192.168.29.4:8080",
 }) => {
   const verify = `${origin}/verifyEmail?verification_token=${token}&email=${email}`;
   const message1 = `

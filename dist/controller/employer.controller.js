@@ -1,16 +1,17 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.employerController = void 0;
-const employer_model_1 = require("../models/employer.model");
 const bcrypt = require("bcrypt");
 const crypto = require("crypto");
-const express_validator_1 = require("express-validator");
 const jwt = require("jsonwebtoken");
+const express_validator_1 = require("express-validator");
+const employer_model_1 = require("../models/employer.model");
 const sendverificationEmail = require("../utils/sendverifactionEmail");
 const sendResetPasswordEmail = require("../utils/sendResetPasswordEmail");
 class employerController {
     static async register(req, res) {
         try {
+            console.log(req, "reeeeeeeeeeeeeeee");
             const errors = (0, express_validator_1.validationResult)(req);
             if (!errors.isEmpty()) {
                 return res.status(422).json({ errors: errors.array() });
@@ -173,7 +174,6 @@ class employerController {
         }
     }
     static async profile(req, res) {
-        console.log(req);
         try {
             const userId = req.params.id;
             console.log(userId);
@@ -205,6 +205,8 @@ class employerController {
             console.error(error);
             res.status(500).send({ message: error.message });
         }
+    }
+    static async appliedstd(req, res) {
     }
 }
 exports.employerController = employerController;

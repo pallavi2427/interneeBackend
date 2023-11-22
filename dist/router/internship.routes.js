@@ -4,6 +4,7 @@ exports.InternRoutes = void 0;
 const internship_controller_1 = require("../controller/internship.controller");
 function InternRoutes(app) {
     app.post("/internship", internship_controller_1.internshipController.postInternship);
+    app.get("/internships", internship_controller_1.internshipController.getById);
     app.get("/allInternship", internship_controller_1.internshipController.AllInternship);
 }
 exports.InternRoutes = InternRoutes;

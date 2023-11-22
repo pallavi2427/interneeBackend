@@ -36,7 +36,6 @@ export default async function (req:any, res:any, next:any) {
     //   }
 
       req.user = userId;
-      console.log(req.user);
 
     //   req.user.employer = employer;
       // console.log(req)

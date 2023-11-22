@@ -314,7 +314,6 @@ export class studentController {
     }
   }
   static async download(req: any, res: any) {
-    console.log(req);
 
     try {
       const filename = req.params.filename;

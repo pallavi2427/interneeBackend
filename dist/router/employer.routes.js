@@ -10,6 +10,7 @@ function EmployerRoutes(app) {
     app.get("/verifyEmail", employer_controller_1.employerController.verifyEmail);
     app.get("/rejectEmail", employer_controller_1.employerController.rejectEmail);
     app.put("/employer/profile/:id", employer_controller_1.employerController.profile);
+    app.get("/employer/applystudent", employer_controller_1.employerController.appliedstd);
 }
 exports.EmployerRoutes = EmployerRoutes;
 //# sourceMappingURL=employer.routes.js.map
